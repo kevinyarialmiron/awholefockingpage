@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet - Arbistar</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap" rel="stylesheet">
+    <script src="wallet.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1><a href="index.html">Arbistar.com</a></h1>
+        <ul>
+            <li><a href="profile.html">Perfil</a></li>
+            <li><a href="wallet.html">Wallet</a></li>
+            <li>Depositos</li>
+            <li>Retiros</li>
+        </ul>
+    </div>
+
+    <div class="landing">
+        <div class="intro">
+            <div class="speech">
+                <h2>Historial de Transacciones</h2>
+                <label for="meses">Selecciona un mes:</label>
+                <select id="meses" name="meses">
+                    <option value="enero">Enero</option>
+                    <option value="febrero">Febrero</option>
+                    <option value="marzo">Marzo</option>
+                    <option value="abril">Abril</option>
+                    <option value="mayo">Mayo</option>
+                    <option value="junio">Junio</option>
+                    <option value="julio">Julio</option>
+                    <option value="agosto">Agosto</option>
+                    <option value="septiembre">Septiembre</option>
+                    <option value="octubre">Octubre</option>
+                    <option value="noviembre">Noviembre</option>
+                    <option value="diciembre">Diciembre</option>
+                </select>
+                
+                <div class="transaction-history">
+                    <ol>
+                        <!-- Los días se generarán dinámicamente con JavaScript -->
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="arbistarlogo">
+                <img src="Images/chatgpt.png" alt="Wallet Icon">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul>
+            <li>Copyright Canarias 2025</li>
+        </ul>
+    </div>
+</body>
+</html>

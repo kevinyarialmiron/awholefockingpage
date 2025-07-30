@@ -1,24 +1,48 @@
+html{
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+}
+
 body{
     display: flex;
+    align-items: center;
     flex-direction: column;
-    min-height: 100vh;
     margin: 0;
     font-family: 'Roboto', Arial, sans-serif;
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.lightmode {
+    background-color: #fff;
+    color: black
 }
 
 p{
     font-size: 18px;
 }
+#demo {
+    color: red;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
 
 .header{
-   /* width: 100%;*/
+    width: 100%;
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 15px;    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
     background-color: #213147;
+    box-sizing: border-box;
 }
 
 .header h1{
@@ -33,17 +57,21 @@ p{
     display: flex;
     list-style: none;
     flex-direction: row;
-    gap: 20px;
+    gap: 15px;
     padding: 0;
 }
 
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
 .landing{
+    flex: 1 0 auto;
     background-color: #213147;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
-    padding: 10px 10px;
     width: 100%;
 }
 
@@ -61,11 +89,12 @@ p{
 }
 
 .arbistarlogo img {
+    max-width: 25vh;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+  /*  object-fit: contain;
     display: block;
-
+*/
 }
 
 .intro{
@@ -77,12 +106,25 @@ p{
     padding: 20px 20px;
     background-color: #213147;
     max-width: 80%;
+    margin: 50px;
 }
 
+.intro input {
+    padding: 10px;
+    border-radius: 10px ;
+    margin: 10px;
+}
+
+.intro ul {
+    list-style: none;
+    text-align: center;
+    padding: 20px 20px;
+}
 .speech{
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     overflow: hidden;
     min-width: 500px;
@@ -174,6 +216,17 @@ h2{
     width: auto;
 }
 
+.registernoborder a{
+    text-decoration: none;
+    color: white;
+}
+
+.register a{
+    text-decoration: none;
+    color: white;
+}
+
+
 .registernoborder {
     background-color: #2373cf;
     color: #fff;
@@ -201,9 +254,10 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0px;
     background-color: #213147;
     width: 100%;
+    flex-shrink: 0;
 }    
 .footer ul {
     display: flex;
@@ -237,7 +291,6 @@ h2{
 }
 
 .quotetext {
- /*   width: 600px;*/
     font-style: italic;
     font-weight: 100;
     max-width: 100%;
@@ -271,5 +324,69 @@ h2{
     font-size: 22px;
     font-weight: 500;
     text-align: right;
+    display: block;
+}
+
+/* Estilos específicos para la página wallet */
+.transaction-history {
+    min-width: 500px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.transaction-history ol {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    list-style: none;
+}
+
+.transaction-history li {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.transaction-history li {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-weight: bold;
+}
+
+#meses {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    color: #213147;
+}
+
+.speech label {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
     display: block;
 }
